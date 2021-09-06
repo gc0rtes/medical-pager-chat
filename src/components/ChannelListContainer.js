@@ -9,13 +9,13 @@ import LogoutIcon from "../assets/logout.png";
 
 const SideBar = () => (
   <div className="channel-list__sidebar">
-    <div className="channel-list__sidebar_icon1">
-      <div className="icon__inner">
+    <div className="channel-list__sidebar__icon1">
+      <div className="icon1__inner">
         <img src={HospitalIcon} alt="Hospital" width="30" />
       </div>
     </div>
-    <div className="channel-list__sidebar_icon2">
-      <div className="icon__inner">
+    <div className="channel-list__sidebar__icon2">
+      <div className="icon1__inner">
         <img src={LogoutIcon} alt="Logoout" width="30" />
       </div>
     </div>
@@ -34,6 +34,7 @@ const ChannelListContainer = () => {
       <SideBar />
       <div className="channel-list__list__wrapper">
         <CompanyHeader />
+        <ChannelSearch />
       </div>
     </>
   );
