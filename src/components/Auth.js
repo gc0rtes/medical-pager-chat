@@ -44,7 +44,7 @@ const Auth = () => {
       avatarURL,
     });
 
-    // Storing all the user data into cookies so we can hav it across all application
+    // Storing all the user data into cookies so we can have it across all application
     cookies.set("token", token);
     cookies.set("username", username);
     cookies.set("fullName", fullName);
@@ -58,8 +58,6 @@ const Auth = () => {
 
     // Once we set the cookies we can reset our browser
     window.location.reload();
-
-    // console.log(form);
   };
 
   const switchMode = () => {
@@ -67,7 +65,7 @@ const Auth = () => {
     setIsSignup((prevIsSignup) => !prevIsSignup); // the correct way to change the previous state!
   };
 
-  //   console.log(form);
+  // console.log(data)
   return (
     <div className="auth__form-container">
       <div className="auth__form-container_fields">
